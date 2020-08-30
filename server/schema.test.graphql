@@ -1,9 +1,38 @@
-# Write your query or mutation here
-
 query todos {
   todos {
     id
     text
     completed
   }
+}
+
+mutation addTodo {
+  addTodo(text: "another todo") {
+    id
+    text
+    completed
+  }
+}
+mutation updateTodo {
+  updateTodo(id: "1") {
+    id
+    text
+    completed
+  }
+}
+
+mutation deleteTodo {
+  deleteTodo(id: "1") {
+    id
+    text
+    completed
+  }
+}
+
+mutation completeAll {
+  completeAll
+}
+
+mutation deleteAll {
+  deleteAll
 }

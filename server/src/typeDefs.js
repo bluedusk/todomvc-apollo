@@ -12,4 +12,11 @@ export const typeDefs = gql`
     text: String!
     completed: Boolean!
   }
+  type Mutation {
+    addTodo(text: String!): TODO!
+    updateTodo(id: ID!, text: String): TODO!
+    deleteTodo(id: ID!): TODO
+    completeAll: Boolean
+    deleteCompleted: Boolean
+  }
 `;
