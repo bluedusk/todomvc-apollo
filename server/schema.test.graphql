@@ -1,0 +1,9 @@
+# Write your query or mutation here
+
+query todos {
+  todos {
+    id
+    text
+    completed
+  }
+}
