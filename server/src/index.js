@@ -32,6 +32,7 @@ const server = new ApolloServer({
 });
 
 // The `listen` method launches a web server at localhost:4000.
-server.listen().then(({ url }) => {
+server.listen().then(({ url, subscriptionsUrl }) => {
   console.log(`🚀  Server ready at ${url}`);
+  console.log(`🚀 Subscriptions ready at ${subscriptionsUrl}`);
 });

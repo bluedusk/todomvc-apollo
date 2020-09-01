@@ -36,3 +36,11 @@ mutation completeAll {
 mutation deleteAll {
   deleteAll
 }
+
+subscription sub_todos {
+  todos {
+    id
+    text
+    completed
+  }
+}
